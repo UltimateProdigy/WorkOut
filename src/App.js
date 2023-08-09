@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar  from "./Navbar";
 import Herosection from"./HeroSection";
 import Exercises from "./Exercises";
+import Secondsection from "./secondSection";
 
 
 const App = () => {
@@ -10,12 +11,9 @@ const App = () => {
     <div className="app">
       <Navbar />
       <Herosection />
-      <Exercises name="Treadmill" calories="250 est calories"/>
-      <Exercises name="Stretching" calories="210 est calories"/>
-      <Exercises name="Yoga" calories="150 est calories" />
-      <Exercises name="Running" calories="120 est calories" />
-      <Exercises name="Lifting" calories="80 est calories"/>
-      <Exercises name="PushUp" calories="300 est calories" />
+      <Exercises />
+      <Secondsection />
+      
     </div>
   );
 }

@@ -171,6 +171,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 170px;
+  margin-bottom: 40px;
 }
 .exercises h1 {
   color: #FFF;
@@ -194,8 +195,65 @@
 
 
 /**Exercises Card**/
-.Card {
+.wholeExercise {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+}
+
+.Card_1 {
   color: #FFF;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url("./img/Threadmill.png");
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+.Card_1 h6 {
+  padding-top: 200px;
+}
+.Card_2 {
+  color: #FFF;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url("./img/Stretching.png");
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+.Card_2 h6 {
+  padding-top: 200px;
+}
+.Card_3 {
+  color: #FFF;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url("./img/yoga.png");
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+.Card_3 h6 {
+  padding-top: 200px;
+}
+.Card_4 {
+  color: #FFF;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url("./img/Running.png");
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+.Card_4 h6 {
+  padding-top: 200px;
+}
+.Card_5 {
+  color: #FFF;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url("./img/Lifting.png");
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+.Card_5 h6 {
+  padding-top: 200px;
+}
+.Card_6 {
+  color: #FFF;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url("./img/PushUp.png");
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+.Card_6 h6 {
+  padding-top: 200px;
 }
 
 
@@ -217,4 +275,57 @@
   justify-content: space-around;
   align-items: center;
   margin: 17px;
+}
+/** second section*/
+  .workout {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120px; /* 100% */
+    letter-spacing: -2px;
+    margin-top: 200px;
+}
+.workoutDiv {
+  width: 800px;
+  height: 700px;
+  position: absolute;
+}
+.loremip {
+  width: 999px;
+  height: 733px;
+  background-color: #3b3b3b;
+  color: #FFF;
+  position: absolute;
+  right: 0px;
+  top: 1810px;
+
+}
+.loremip h1 {
+  color: #FFF;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 200% */
+  letter-spacing: 0.5px;
+  font-family: 'Poppins', sans-serif;
+  width: 600px;
+  margin-left: 350px;
+  margin-top: 120px;
+}
+.loremip button {
+  color: #FFF;
+  background-color: #25AB75;
+  width: 200px;
+  height: 70px;
+  margin-left: 350px;
+  margin-top: 80px;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px; /* 122.222% */
+  letter-spacing: 1px;
 }
