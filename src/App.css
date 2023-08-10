@@ -34,7 +34,7 @@
 /**first section**/
 
 .heroSection{
-  background-image: url("./img/image1.png");
+  background-image: url(./image1.png);
   background-repeat: no-repeat;
   background-position-x: 490px;
   background-position-y: -180px;
@@ -195,64 +195,13 @@
 
 
 /**Exercises Card**/
-.wholeExercise {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 30px;
-}
-
 .Card_1 {
   color: #FFF;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url("./img/Threadmill.png");
-  background-repeat: no-repeat;
+  /**background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url("./img/Threadmill.png");
+  background-repeat: no-repeat;**/
   margin-bottom: 30px;
 }
 .Card_1 h6 {
-  padding-top: 200px;
-}
-.Card_2 {
-  color: #FFF;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url("./img/Stretching.png");
-  background-repeat: no-repeat;
-  margin-bottom: 30px;
-}
-.Card_2 h6 {
-  padding-top: 200px;
-}
-.Card_3 {
-  color: #FFF;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url("./img/yoga.png");
-  background-repeat: no-repeat;
-  margin-bottom: 30px;
-}
-.Card_3 h6 {
-  padding-top: 200px;
-}
-.Card_4 {
-  color: #FFF;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url("./img/Running.png");
-  background-repeat: no-repeat;
-  margin-bottom: 30px;
-}
-.Card_4 h6 {
-  padding-top: 200px;
-}
-.Card_5 {
-  color: #FFF;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url("./img/Lifting.png");
-  background-repeat: no-repeat;
-  margin-bottom: 30px;
-}
-.Card_5 h6 {
-  padding-top: 200px;
-}
-.Card_6 {
-  color: #FFF;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url("./img/PushUp.png");
-  background-repeat: no-repeat;
-  margin-bottom: 30px;
-}
-.Card_6 h6 {
   padding-top: 200px;
 }
 
