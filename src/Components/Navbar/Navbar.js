@@ -1,5 +1,5 @@
-import { click } from "@testing-library/user-event/dist/click";
 import React from "react";
+import "./Navbar.css"
 import { useState } from "react";
 
 const Navbar = () => {
@@ -15,17 +15,17 @@ const Navbar = () => {
             <nav className='navbar'>
                 <h1 className='titleName'>WORKOUT</h1>
                     <ul className='links'>
-                    <li>EXERCISES</li>
-                    <li>TRAINERS</li>
+                    <li>ABOUT</li>
                     <li>PRICING</li>
+                    <li>REGISTER</li>
                     <li onClick={Click} >LOGIN</li>
                 </ul>
             </nav>
             <div style={{display: toggle ? 'block' : 'none'}} className="toggleList">
                 <ul className="toggleListItem">
-                    <li>EXERCISES</li>
-                    <li>TRAINERS</li>
+                    <li>ABOUT</li>
                     <li>PRICING</li>
+                    <li>REGISTER</li>
                     <li>LOGIN</li>
                 </ul>
             </div>

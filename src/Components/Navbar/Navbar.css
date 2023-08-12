@@ -1,0 +1,42 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+} 
+.titleName {
+    color: #FFF;
+    background-color: black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.links {
+    display: flex;
+    cursor: pointer;
+    color: white;
+}
+.navbar .links li {
+    margin: 0 25px;
+    letter-spacing: 1.5px;
+    font-style: normal;
+    font-size: 12px;
+  }
+  .toggleList {
+    height: 190px;
+    width: 290px;
+    background-color: #3b3b3b;
+    position: absolute;
+    right: 80px;
+    top: 50px;
+    flex-direction: column;
+    display: none;
+  }
+  .toggleListItem li {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 17px;
+  }
