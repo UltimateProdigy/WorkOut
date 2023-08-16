@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Register.css"
+import { Link } from "react-router-dom";
 
 
 const Register = () => {
@@ -11,7 +12,8 @@ const Register = () => {
     
     const handleSubmit = (e) => {
         e.preventDefault();
-
+        localStorage.setItem("email", JSON.stringify(email));
+        localStorage.setItem("password", JSON.stringify(password));
     }
 
     return (
@@ -52,7 +54,13 @@ const Register = () => {
                 <div className="submitDiv">
                 <button className="registerSubmitButton">Register</button>
                 </div>
+                <Link to="/login">
+                <p>Already registered, log in?</p>
+                </Link>
+                
             </form>
+            
+            
         </div>
     )
 }

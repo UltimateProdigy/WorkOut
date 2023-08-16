@@ -4,6 +4,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.registerDiv p {
+  color: #FFF;
+  text-align: center;
+  padding-top: 10px;
+}
 .registerIntro {
     color: #FFF;
     text-align: center;
@@ -24,7 +29,7 @@
     width: 500px;
     margin: auto;
     padding: 25px;
-    height: 450px;
+    height: 470px;
     border-radius: 10px;
     }
     .register label{

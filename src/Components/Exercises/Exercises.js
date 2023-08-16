@@ -1,4 +1,5 @@
 import React from "react";
+import "./Exercises.css"
 
 const Exercises = ({name, calories, img}) => {
     return (

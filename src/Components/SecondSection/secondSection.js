@@ -1,4 +1,5 @@
 import React from "react";
+import "./secondSection.css"
 
 const Secondsection = () => {
     return(

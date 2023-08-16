@@ -1,9 +1,13 @@
+.navbarDiv {
+  margin: 30px 40px;
+
+}
 .navbar {
     display: flex;
     justify-content: space-between;
     width: 100%;
     background-color: black;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;    
 } 
 .titleName {
     color: #FFF;

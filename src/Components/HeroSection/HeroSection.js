@@ -1,7 +1,8 @@
 import React from "react";
+import "./HeroSection.css";
 
 
-const Herosection = () => {
+const HeroSection = () => {
     return (
         <div>
         <section className="heroSection">
@@ -35,4 +36,4 @@ const Herosection = () => {
         </div>
     )
 }
-export default Herosection;
+export default HeroSection;
