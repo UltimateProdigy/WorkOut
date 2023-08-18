@@ -1,3 +1,6 @@
+.heroSectionDiv {
+  margin: 0 30px;
+}
 .heroSection{
     background-image: url(./image1.png);
     background-repeat: no-repeat;

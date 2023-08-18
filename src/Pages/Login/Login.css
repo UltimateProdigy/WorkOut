@@ -21,15 +21,15 @@
 
   .loginForm {
     width: 500px;
-    height: 300px;
+    height: 320px;
     color: #FFF;
-    background-color: black;
+    background-color: transparent;
     border: solid #25AB75;
     padding: 25px;
     border-radius: 10px;
     
   }
- .loginForm input {
+.loginForm input {
     width: 100%;
     padding: 6px 10px;
     margin-top: 10px;
@@ -59,13 +59,17 @@
     color: #25AB75;
  }
  .forgotPassword {
-  padding-top: 15px;
+  padding-top: 18px;
   font-size: 15px;
   cursor: pointer;
-  color: blue;
-  width: 130px;
+  color: #FFF;
+  width: 150px;
  }
- .forgotPassword:hover {
-    color: white;
+ 
+ .signUp {
+  font-size: 15px;
+  cursor: pointer;
+  color: #FFF;
+  padding-top: 10px;
  }
  

@@ -24,8 +24,9 @@
     font-family: 'Pacifico', cursive;
   }
   .register {
-    color: #FFF;
-    background-color: #3b3b3b;
+    color:  wheat;
+    background-color: transparent;
+    border: #25AB75 solid;
     width: 500px;
     margin: auto;
     padding: 25px;
@@ -69,4 +70,25 @@
     .register input:focus {
       border: #25AB75 3px solid;
     }
+.errMessage {
+  color: red;
+  font-size: 50px;
+  text-align: center;
+}
+.success {
+  width: 300px;
+  height: 300px;
+  color: #FFF;
+  margin: auto;
+  padding-top: 250px;
+}
+.success h1 {
+  font-size: 50px;
+  
+}
+.success p {
+  text-decoration: underline;
+  cursor: pointer;
+  padding-top: 30px;
+}
   

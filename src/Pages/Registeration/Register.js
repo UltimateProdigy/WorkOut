@@ -1,33 +1,58 @@
-import React, { useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./Register.css"
 import { Link } from "react-router-dom";
+import axios from '../../API/axios'
 
 
 const Register = () => {
     
-    const [name, setName] = useState("");
+    const [username, setUserName] = useState("");
     const [email, setEmail] = useState("");
-    const [number, setNumber] = useState("");
     const [password, setPassword] = useState("");
+
+    const [errMsg, setErrMsg] = ("");
+    const [success, setSuccess] = useState(false);
+
+    const REGISTER_URL = '/Register';
+
+    
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        localStorage.setItem("email", JSON.stringify(email));
-        localStorage.setItem("password", JSON.stringify(password));
+        console.log({username});
+        console.log({password});
+        if (!username || !password || !email) {
+            setErrMsg("Invalid Entry");
+        }
+        
     }
-
+    
     return (
+        <>
+        {success ? (
+            <section className="success">
+                <h1>Registered Successfully!!!</h1>
+                <p>
+                    <Link to="/login">
+                    <a href="">Sign In</a>
+                    </Link>
+                    
+                </p>
+            </section>
+        ):(
         <div className="registerDiv" >
             <div className="registerIntro">
                 <h1>Register to <span>Workout...</span> </h1>
             </div>
+            
             <form onSubmit={handleSubmit} className="register">
-                <label>Full Name:</label>
+            <p className="errMessage">{errMsg}</p>
+                <label>Username:</label>
                 <input 
                 type="text" 
                 required
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+                value={username}
+                onChange={(e) => setUserName(e.target.value)}
                 />
                 <label>E-mail Address:</label>
                 <input 
@@ -35,13 +60,6 @@ const Register = () => {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                />
-                <label>Phone Number:</label>
-                <input 
-                type="text" 
-                required
-                value={number}
-                onChange={(e) => setNumber(e.target.value)}
                 />
                 <label>Password:</label>
                 <input 
@@ -59,9 +77,9 @@ const Register = () => {
                 </Link>
                 
             </form>
-            
-            
         </div>
+        )}
+        </>
     )
 }
 
