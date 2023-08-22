@@ -6,7 +6,7 @@
 }
 .logIn {
     padding-top: 10px;
-    padding-left: 200px;
+    padding-left: 20%;
 }
   .logIn h1 {
     color: #FFF;
@@ -17,6 +17,14 @@
     margin-bottom: 25px;
     margin-left: 20px;
 
+  }
+  .errMsg {
+    font-size: 20px;
+    text-align: center;
+    background-color: red;
+    width: 500px;
+    border-radius: 10px 10px 10px 10px;
+    color: #FFF;
   }
 
   .loginForm {

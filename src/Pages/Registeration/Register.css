@@ -71,9 +71,12 @@
       border: #25AB75 3px solid;
     }
 .errMessage {
-  color: red;
-  font-size: 50px;
+  font-size: 20px;
   text-align: center;
+  background-color: red;
+  width: 500px;
+  margin: auto;
+  border-radius: 10px 10px 10px 10px;
 }
 .success {
   width: 300px;

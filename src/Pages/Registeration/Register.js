@@ -1,7 +1,7 @@
-import React, { useRef, useState, useEffect } from "react";
-import "./Register.css"
+import React, { useEffect, useRef, useState} from "react";
+import "./Register.css";
 import { Link } from "react-router-dom";
-import axios from '../../API/axios'
+import axios from '../../API/axios';
 
 
 const Register = () => {
@@ -10,23 +10,54 @@ const Register = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    const [errMsg, setErrMsg] = ("");
+    const [errMsg, setErrMsg] = useState("");
     const [success, setSuccess] = useState(false);
 
-    const REGISTER_URL = '/Register';
+    const errRef = useRef();
+
+    useEffect(()=>{
+        setErrMsg("");
+    }, [username, password])
+
+    const REGISTER_URL = '/register';
 
     
     
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log({username});
-        console.log({password});
-        if (!username || !password || !email) {
-            setErrMsg("Invalid Entry");
-        }
+
+        try {
+            const response = await axios.post(
+                REGISTER_URL,
+                JSON.stringify({ userName: username, passWord: password }),
+            {
+                /**headers: { "Content-Type": "application/json" },
+                withCredentials: true,**/
+            }
+            );
+            console.log(response.data);
+            console.log(response.accessToken);
+            console.log(JSON.stringify(response?.data));
+            setSuccess(true);
+            setUserName("");
+            setPassword("");
+        } catch (err) {
+            if (!err?.response) {
+                setErrMsg("No Server Response");   
+            } 
+            else if (err.response?.status === 409) {
+                setErrMsg("Username Taken");
+            } 
+            else if (!username || !password || !email){
+                setErrMsg("Please! Fill in all fields")
+            }
+            else {
+                setErrMsg("Registration Failed");
+            }
+            }
+        };
         
-    }
-    
+
     return (
         <>
         {success ? (
@@ -44,9 +75,8 @@ const Register = () => {
             <div className="registerIntro">
                 <h1>Register to <span>Workout...</span> </h1>
             </div>
-            
+            <p ref={errRef} className={errMsg ? "errMessage" : "offscreen"} aria-live="assertive">{errMsg}</p>
             <form onSubmit={handleSubmit} className="register">
-            <p className="errMessage">{errMsg}</p>
                 <label>Username:</label>
                 <input 
                 type="text" 
