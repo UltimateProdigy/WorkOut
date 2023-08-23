@@ -21,8 +21,6 @@ const Register = () => {
 
     const REGISTER_URL = '/register';
 
-    
-    
     const handleSubmit = async (e) => {
         e.preventDefault();
 
